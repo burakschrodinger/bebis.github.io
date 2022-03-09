@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+*{
+    padding: 0;margin: 0;box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    
+}
+
+.nav{
+    width: 100%;
+    background-color: #000;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    width: 80%;
+    margin: auto;
+}
+nav a{
+    color: #fff;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    padding-right: 30px;
+    font-family: 'Lato', sans-serif;
+}
+nav ul li a{
+    font-weight: 577;
+    font-size: 1.1rem;
+}
+
+.logo{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2rem;
+    user-select: none;
+}
+@media(max-width:978px){
+    .logo{
+         
+        font-size: 1.7rem;
+         
+    }
+    nav ul li a{
+         
+        font-size: 1rem;
+    }
+    nav{
+        width: 95%;
+    }
+}
+@media(max-width:800px){
+    nav ul{
+         
+    }
+}
+
+/*  RECENTS */
+
+
+.main{
+    width: 80%;
+    margin: 30px auto 30px auto;
+}
+.main-title{
+    margin-bottom: 40px;font-family: 'Poppins', sans-serif;
+}
+
+.header{
+    display: grid;
+    grid-template-columns: 3.8fr 1.2fr;
+    gap: 50px;
+}
+.recents{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+.box{
+     
+    padding: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    border-radius: 5px;
+}
+.box img{
+    width: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+}
+.title{
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+.artic{
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+.side h1{
+    margin-bottom: 10px;
+}
+.side hr{
+    margin-bottom: 20px;
+}
+.side-posts{
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
+    
+}
+.side-posts img{
+    width: 150px;
+     
+}
+.side-posts h4{
+    margin-left: 20px;
+}
+@media(max-width:1200px){
+    .recents{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width:1020px){
+    .recents{
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width:750px){
+    .header{
+        grid-template-columns: 1fr;
+    }
+    .nav ul{
+        display: none;
+    }
+}
