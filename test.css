@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 @import url('https://rsms.me/inter/inter.css');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 :root {
     --bg-page: #1a1a1a;
     --text-color: #f3f3f3;
@@ -151,6 +152,9 @@ nav ul li a{
 .side-posts h4{
     margin-left: 20px;
 }
+.ad-section{
+    margin-top: 140px;
+}
 
 .recents-date{
     font-family: 'Poppins',sans-serif;
@@ -255,4 +259,37 @@ footer{
     justify-content: center;
     padding: 35px;
     color: #fff;
+}
+
+.article-main{
+    width: 80%;
+    margin: 50px auto 50px auto;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 50px;
+}
+.article-main img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.article-main p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400
+    ;
+    font-size: 19px;
+    line-height: 31px;
+    color: #2c2c2c
+    ;
+}
+.article-title{
+    margin-bottom: 25px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 38px;
+    line-height: 46px;
+    color: #0c0c0c;
+}
+
+.more-related{
+    margin-bottom: 160px;
 }
